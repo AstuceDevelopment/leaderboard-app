@@ -1,0 +1,55 @@
+/* styles/globals.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #7a7a7ab3;
+}
+
+/* 📌 TeamRow component styling */
+.team-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 20px 30px;
+  margin: 15px auto;
+  width: 95%;
+  max-width: 1000px;
+  height: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.15);
+}
+
+.team-logo {
+  width: 70px; /* Ensure correct size */
+  height: 70px;
+  margin-left: 10px;
+  border-radius: 20%;
+  object-fit: cover;
+  display: block; /* Prevent inline issues */
+}
+
+.team-name {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 30px;
+  color: #fff;
+}
+
+.team-score {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* 📌 Position Number Styling */
+.team-position {
+  font-size: 2rem; /* Increase font size */
+  font-weight: bold;
+  text-align: center;
+  width: 40px;
+  color: #fff;
+}
