@@ -1,9 +1,17 @@
-/* styles/globals.css */
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #7a7a7ab3;
+}
+
+/* 📌 Leaderboard & Admin Panel Containers */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* 📌 TeamRow component styling */
@@ -12,44 +20,114 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #000;
-  padding: 20px 30px;
-  margin: 15px auto;
+  padding: 15px;
+  margin: 10px auto;
   width: 95%;
   max-width: 1000px;
-  height: 40px;
   border-radius: 12px;
   box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.15);
+  flex-wrap: wrap;
 }
 
 .team-logo {
-  width: 70px; /* Ensure correct size */
-  height: 70px;
-  margin-left: 10px;
-  border-radius: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   object-fit: cover;
-  display: block; /* Prevent inline issues */
 }
 
 .team-name {
   flex-grow: 1;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin-left: 30px;
   color: #fff;
+  margin-left: 10px;
 }
 
 .team-score {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
 }
 
-/* 📌 Position Number Styling */
 .team-position {
-  font-size: 2rem; /* Increase font size */
+  font-size: 1.6rem;
   font-weight: bold;
-  text-align: center;
-  width: 40px;
   color: #fff;
+  text-align: center;
+  width: 30px;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .team-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .team-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+  }
+
+  .team-name {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  .team-score {
+    font-size: 1rem;
+  }
+
+  .team-position {
+    font-size: 1.4rem;
+  }
+}
+
+/* 📌 Admin Panel Styles */
+.admin-panel {
+  text-align: center;
+  padding: 20px;
+}
+
+.admin-button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.increment {
+  background-color: green;
+  color: white;
+}
+
+.decrement {
+  background-color: red;
+  color: white;
+}
+
+.update-button {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .admin-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+  .update-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
 }
