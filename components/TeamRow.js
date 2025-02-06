@@ -7,8 +7,8 @@ const TeamRow = ({ position, logo, name, score }) => {
       <Image
         src={logo}
         alt={name}
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         className="team-logo"
       />
       <span className="team-name">{name}</span>
