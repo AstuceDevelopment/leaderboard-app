@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const TeamRow = ({ position, logo, name, score }) => {
+const TeamRow = ({ position, logo, name, score, customClass }) => {
   return (
-    <div className="team-row">
+    <div className={`team-row ${customClass}`}>
       <span className="team-position">{position}</span>
       <Image
         src={logo}
