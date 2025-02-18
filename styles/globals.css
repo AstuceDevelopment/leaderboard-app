@@ -31,7 +31,6 @@ body {
   -webkit-text-fill-color: transparent;
   text-shadow: 0 5px 20px rgba(255, 0, 0, 0.8);
   letter-spacing: 4px;
-  margin-top: 20px;
   animation: pulse 2s infinite alternate;
 }
 
