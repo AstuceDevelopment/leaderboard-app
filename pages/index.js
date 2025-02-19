@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { db } from "../lib/firebaseconfig";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 import TeamRow from "../components/TeamRow";
-import "../styles/leaderboard.css"; // Import the CSS file
+import "../styles/globals.css"; // Import the CSS file
 
 function formatTime(seconds) {
   const h = Math.floor(seconds / 3600)
