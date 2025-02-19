@@ -76,7 +76,7 @@ export default function Admin() {
   };
 
   return (
-    <div style={{ marginLeft: "20px" }}>
+    <div style={{ marginLeft: "20px", backgroundColor: "#fff" }}>
       <h1 style={{ textAlign: "center" }}>Admin Panel</h1>
       <button onClick={login} style={{ marginBottom: "20px" }}>
         Login with Google
